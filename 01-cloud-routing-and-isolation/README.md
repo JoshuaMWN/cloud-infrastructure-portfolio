@@ -90,11 +90,11 @@ webVM2            Running   1              1
 
 ![lab4-availability-set](assets/lab4-availability-set.png)  
 
-**Spoke topology with appVNET-to-webVNET and appVNET-to-dbVNET connections**  
+**The control plane validation below confirms the hub-and-spoke structure is active with synchronized appVNET-to-webVNET and appVNET-to-dbVNET peering connections:**  
 
 ![lab4-hub-spoke-peerings](assets/lab4-hub-spoke-peerings.png)  
 
-**(10.10.0.4) to appVNET tier, confirming the routing configuration**  
+**To confirm end-to-end routing integrity across tiers, a final traffic verification probe was initiated from the web server tier (10.10.0.4) to the appVNET tier, confirming the routing configuration handles live traffic cleanly:**  
 
 ![lab4-traffic-test](assets/lab4-traffic-test.png)  
 
