@@ -11,7 +11,8 @@ This repository documents practical infrastructure automation, performance monit
 **Technical Implementation:** Configured ARM templates to comply with Azure Policy naming constraints, fixed PowerShell array syntax errors, debugged Azure CLI argument case sensitivity, and validated all three deployments achieved identical end states.
 
 
-**To automate deployment via IaC, an ARM template was imported into the portal. However, initial validation failed due to an enterprise governance policy restricting default resource names:**
+**To automate deployment via IaC, an ARM template was imported into the portal. However, initial validation failed due to an enterprise governance policy restricting default resource names:**  
+
 ![lab1-arm-policy-error](assets/lab1-arm-policy-error.png)
 
 **Enterprise environments enforce Azure Policies for many reasons, in this case its in the hopes of ensuring intentional standardized resource naming.**  
