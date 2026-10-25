@@ -5,7 +5,7 @@ This repository documents the practical configuration, testing, and troubleshoot
 
 ## Lab Module Breakdowns
 ### Lab 1: Custom Azure DNS Zone & Name Resolution
-**Objective:** Map a custom domain name to internal cloud infrastructure so traffic routes correctly through private name resolution without relying on manual IP addresses.  
+**Objective:** Map a custom domain name to cloud infrastructure using a public Azure DNS zone to manage external name resolution and DNS record propagation.  
 
 **Technical Implementation:** Created a public DNS zone and added an A record mapped to target IP 10.10.10.10 with a 3600-second TTL.  
 
@@ -46,7 +46,7 @@ Address: 10.10.10.10
 
 **Technical Implementation:** Configured the private blob container to block anonymous incoming requests. To grant controlled external access without exposing master storage account keys, I generated a time-bound SAS token scoped specifically to read operations.  
 
-**To verify that unauthenticated public requests were actively blocked at the storage firewall layer, I attempted a direct HTTP request against the blob URL using curl:**  
+**To verify that public blob anonymous access was disabled on the storage account, I attempted a direct HTTP request against the blob URL using curl:**  
 
 
 ```bash

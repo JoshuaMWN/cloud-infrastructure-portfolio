@@ -9,7 +9,7 @@ This repository documents practical implementation steps for enterprise identity
 
 **Objective:** Provision a secure Azure Key Vault instance, configure access control policies using system-assigned Managed Identity for passwordless authentication, store sensitive application configuration settings, and integrate secret retrieval directly into an Azure App Service application.  
 
-**Technical Implementation:** Deployed a Standard Key Vault with Vault Access Policies, enabled system-assigned Managed Identity on an Azure App Service instance, granted secret Get and List permissions to the app's Service Principal, created a target secret, and configured Key Vault reference environment variables in App Service to safely load sensitive values without embedding plain-text credentials in application code.  
+**Technical Implementation:** Deployed a Standard Key Vault with Vault Access Policies, enabled system-assigned Managed Identity on an Azure App Service instance, granted secret Get and List permissions to the app's Service Principal, created a target secret, and stored the Key Vault secret URI as an environment variable, allowing the application to safely load sensitive values without embedding plain-text credentials in application code.  
 
 **To establish secure credential management, a Standard tier Azure Key Vault was provisioned with Vault access policies enabled:**  
 
