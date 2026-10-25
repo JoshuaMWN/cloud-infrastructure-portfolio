@@ -1,6 +1,6 @@
 # provisioning-automation-and-monitoring
 ## Project Focus
-This repository documents practical infrastructure automation, performance monitoring, centralized logging, and PaaS deployment across Microsoft Azure. The core objective was building system reliability and efficency: automating VM provisioning across multiple interfaces, establishing real-time alerting for on-call readiness, centralizing logs for rapid troubleshooting, and enabling full-stack observations for application workloads. These labs capture the day-to-day work of running production infrastructure deployment consistency, incident alerting, and drilling down into failures when they occur.
+This repository documents practical infrastructure automation, performance monitoring, centralized logging, and PaaS deployment across Microsoft Azure. The core objective was building system reliability and efficiency: automating VM provisioning across multiple interfaces, establishing real-time alerting for on-call readiness, centralizing logs for rapid troubleshooting, and enabling full-stack observations for application workloads. These labs capture the day-to-day work of running production infrastructure deployment consistency, incident alerting, and drilling down into failures when they occur.
 
 
 
@@ -15,7 +15,7 @@ This repository documents practical infrastructure automation, performance monit
 
 ![lab1-arm-policy-error](assets/lab1-arm-policy-error.png)
 
-**Enterprise environments enforce Azure Policies for many reasons, in this case its in the hopes of ensuring intentional standardized resource naming.**  
+**Enterprise environments enforce Azure Policies for many reasons, in this case in the hopes of ensuring intentional standardized resource naming.**  
 **To follow best practice I created a vmName parameter within the JSON template schema. This allowed for greater control over the naming conventions during deployment setup:**  
 
 ```json
@@ -110,7 +110,7 @@ sudo stress --cpu 8 --timeout 480 &
 
 **KQL queries were then executed within the workspace to audit endpoint health and verify metric ingestion.**  
 
-**By using the following query against the Heartbeat table, I was able confirmed active connection status and highlighted the running Azure Monitor Agent version:**  
+**By using the following query against the Heartbeat table, I was able to confirm active connection status and highlighted the running Azure Monitor Agent version:**  
 ```kql
 Heartbeat
 | summarize arg_max(TimeGenerated, *) by Computer

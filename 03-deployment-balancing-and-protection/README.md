@@ -80,7 +80,7 @@ InstanceId    LatestModelApplied    Location    Name              ProvisioningSt
 
 ![lab2-waf-disabled-rule](assets/lab2-waf-disabled-rule.png)  
 
-**Key Takeaway:** Unlike Standard Layer 4 Load Balancers, Azure Application Gateway operates at Layer 7, providing HTTP/HTTPS routing, SSL termination, and WAF protection. Fine-tuning WAF rules (such as disabling false-positive triggers like rule 942100) allows organizations to maintain strict application security while preventing accidental service disruption to legitimate application traffic.  
+**Key Takeaway:** Unlike Standard Layer 4 Load Balancers, Azure Application Gateway operates at Layer 7, providing HTTP/HTTPS routing, SSL termination, and WAF protection. Managing WAF rule configurations (such as tailoring rule exclusions like rule 942100) allows organizations to maintain strict application security while customizing policy enforcement to accommodate legitimate application traffic.   
 
 ### Lab 3: Automate Workloads by Deploying Web Services via Custom Script Extension  
 
